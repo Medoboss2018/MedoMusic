@@ -96,7 +96,7 @@ bot.on("message", async message => {
 					message.reply(`now playing **${songsQueue[0]}**`);
 				}
 			} else if (args.length == 0 && queue.length == 0) {
-				message.reply("queue is empty now, type !play [song name] or !yt [song name] to play/search new songs!");
+				message.reply("queue is empty now, type Mplay [song name] or Myt [song name] to play/search new songs!");
 			} else if (queue.length > 0 || isPlaying) {
 				getID(args).then(id => {
 					if (id) {
