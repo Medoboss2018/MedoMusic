@@ -1,4 +1,4 @@
-coconst Discord = require('discord.js');
+const Discord = require('discord.js');
 
 const Util = require('discord.js');
 
@@ -261,12 +261,14 @@ client.on('message', message => {
         .addField('resume', 'تكملة الاغنية')
         .addField('queue', 'اظهار قائمة التشغيل')
         .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
-	.addField('sw', 'لتغيير حالة البوت ')
+	    .addField('sw', 'لتغيير حالة البوت ')
+    	 .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
        
       message.channel.send(helpEmbed);
     }
 });
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 KiNg66S.on('message', message => {
   if (!message.content.startsWith(PREFIX)) return;
