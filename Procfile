@@ -1,1 +1,0 @@
-worker: node Medo.js
